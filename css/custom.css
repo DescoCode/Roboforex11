@@ -1,0 +1,596 @@
+body, 
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background:var(--primary-dark);
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+.back-to-top i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+.back-to-top:hover {
+  background: var(--primary);
+  color: #fff;
+}
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+}
+
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #fff;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid var(--primary);
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#header{
+    width: 100%;
+    background-color: transparent;
+    transition: background ease-out 0.2s;
+    height: 5px;
+}
+
+#header.active{
+    position: fixed;
+    background: #fff;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+}
+#header.container{
+  background-color: #fff;
+}
+#slider{
+    background: url(/assets/Img/bg-banner.webp) no-repeat center ;
+    margin-bottom: -45px;
+    margin-top: -95px;
+    width: 100%;
+    height: 750px;
+}
+
+#slider h1{
+  font-weight: 800;
+  color: var(--primary);
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 50px;
+}
+#slider h2{
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 60px;
+}
+#slider li{
+  font-size: 1.4rem;
+  position: relative;
+  box-sizing: border-box;
+  margin: 0 0 1.2rem;
+  padding-left: 1rem;
+  line-height: 1.42857143;
+  color: #7fba2f;
+  margin-right: 10px;
+  border-radius: 4px;
+  margin-top: -20px;
+}
+#slider button{
+  box-sizing: border-box;
+  background-image: linear-gradient(90deg, #7fba2f, #98c838, #7fba2f);
+  border: none;
+  border-radius: 4px;
+  width: 400px;
+  height: 80px;
+  margin-top: 15px;
+  font-size: 25px;
+  font-weight: 500;
+  color: #fff;
+  transition: 0.3s;
+}
+#slider button a{
+  color: #fff;
+  transition: 0.3s;
+}
+#slider button a:hover{
+  color: var(--primary-dark);
+}
+#partner{
+  display: inline-block;
+  box-sizing: border-box;
+  background-color: #697d8c;
+  width: 100%;
+  height: 65rem;
+}
+#partner h2{
+  color: var(--primary);
+}
+
+#services a.destaque1 {
+    display: block;
+    background: url(/assets/Img/forex-card-bg.jpg);
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: all ease-out 0.2s;
+    margin-top: 10px;
+}
+
+#services a.destaque1:hover {
+    background:url(/assets/Img/forex-card-bg.jpg);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.12);
+    transform: scale(1.05);
+}
+
+#services p {
+    color: #fff;
+}
+
+#services a.destaque1 .img-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+#services a.destaque1 .img-container img{
+    max-height: 70px;
+}
+
+#services a.destaque2 {
+    display: block;
+    background: url(/assets/Img/indexes-card-bg.jpg);
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: all ease-out 0.2s;
+    margin-top: 10px;
+}
+
+#services a.destaque2:hover {
+    background:url(/assets/Img/indexes-card-bg.jpg);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.12);
+    transform: scale(1.05);
+}
+
+#services a.destaque2 .img-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+#services a.destaque2 .img-container img{
+    max-height: 70px;
+}
+
+#services a.destaque3 {
+    display: block;
+    background: url(/assets/Img/stocks-card-bg.jpg);
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: all ease-out 0.2s;
+    margin-top: 10px;
+}
+
+#services a.destaque3:hover {
+    background:url(/assets/Img/stocks-card-bg.jpg);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.12);
+    transform: scale(1.05);
+}
+
+#services a.destaque3 .img-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+#services a.destaque3 .img-container img{
+    max-height: 70px;
+}
+
+#services a.destaque4 {
+    display: block;
+    background: url(/assets/Img/etf-card-bg.webp);
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: all ease-out 0.2s;
+    margin-top: 10px;
+}
+
+#services a.destaque4:hover {
+    background:url(/assets/Img/etf-card-bg.webp);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.12);
+    transform: scale(1.05);
+}
+
+#services a.destaque4 .img-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+#services a.destaque4 .img-container img{
+    max-height: 70px;
+}
+
+#services a.destaque5 {
+    display: block;
+    background: url(/assets/Img/commodities-card-bg.jpg);
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: all ease-out 0.2s;
+    margin-top: 10px;
+}
+
+#services a.destaque5:hover {
+    background:url(/assets/Img/commodities-card-bg.jpg);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.12);
+    transform: scale(1.05);
+}
+
+#services a.destaque5 .img-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+#services a.destaque5 .img-container img{
+    max-height: 70px;
+}
+
+#services a.destaque6 {
+    display: block;
+    background: url(/assets/Img/energies-card-bg.jpg);
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: all ease-out 0.2s;
+    margin-top: 10px;
+}
+
+#services a.destaque6:hover {
+    background:url(/assets/Img/energies-card-bg.jpg);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.12);
+    transform: scale(1.05);
+}
+
+#services a.destaque6 .img-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+#services a.destaque6 .img-container img{
+    max-height: 70px;
+}
+
+#services a.destaque7 {
+    display: block;
+    background: url(/assets/Img/metails-card-bg.jpg);
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: all ease-out 0.2s;
+    margin-top: 10px;
+}
+
+#services a.destaque7:hover {
+    background:url(/assets/Img/metails-card-bg.jpg);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.12);
+    transform: scale(1.05);
+}
+
+#services a.destaque7 .img-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+#services a.destaque7 .img-container img{
+    max-height: 70px;
+}
+#services button{
+  box-sizing: border-box;
+  background-image: linear-gradient(90deg, #7fba2f, #98c838, #7fba2f);
+  border: none;
+  border-radius: 4px;
+  width: 400px;
+  height: 80px;
+  margin-top: 30px;
+  font-size: 25px;
+  font-weight: 500;
+  color: #fff;
+  transition: 0.3s;
+  position: absolute;
+  left: 450px;
+}
+#services button a{
+  color: #fff;
+  transition: 0.3s;
+}
+#services button a:hover{
+  color: var(--primary-dark);
+}
+
+#parceiros {
+  display: inline-block;
+  box-sizing: border-box;
+  background-color: #f2f5fb;
+  width: 100%;
+  height: 25rem;
+  margin-top: -10px;
+}
+#parceiros h5{
+  color: var(--secondary);
+  margin-left: 60px;
+  font-weight: 800;
+}
+#seguro {
+  background: url(/assets/Img/bg-block__security.webp) no-repeat;
+  margin-right: 0;
+}
+#seguro img{
+  display: inline-block;
+  vertical-align: middle;
+  width: 20%;
+  height: 50%;
+  left: 0;
+  margin-right: -30px;
+}
+#seguro h7{
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--secondary);
+ }
+#seguro h1{
+  color: var(--primary);
+  margin-left: 10px;
+
+}
+#seguro h5{
+  color: #697d8c;
+  margin-bottom: 30px;
+}
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #45505b;
+}
+
+.section-title h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #0563bb;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+.section-title p {
+  margin-bottom: 0;
+}
+
+#seguro button{
+  box-sizing: border-box;
+  background-image: linear-gradient(90deg, #7fba2f, #98c838, #7fba2f);
+  border: none;
+  border-radius: 4px;
+  width: 400px;
+  height: 80px;
+  margin-top: 30px;
+  font-size: 25px;
+  font-weight: 500;
+  color: #fff;
+  transition: 0.3s;
+  margin-left: 50px;
+  margin-top: 0;
+}
+#seguro button a{
+  color: #fff;
+  transition: 0.3s;
+}
+#seguro button a:hover{
+  color: var(--primary-dark);
+}
+#metatrader h2{
+  font-weight: 400;
+}
+#metatrader ul{
+  color: var(--primary);
+}
+#bonus{
+  background: url(/assets/Img/main-bg.png);
+  width: 100%;
+  height: 37rem;
+  text-align: center;
+}
+#bonus h1{
+  color: var(--primary);
+  font-size: 50px;
+  padding: 20px 0 20px 0;
+}
+#bonus h5{
+  color: #fff;
+  font-size: 30px;
+}
+#bonus h4{
+  color: #fff;
+  padding: 200px 0 20px 0;
+}
+#bonus p{
+  font-size: 14px;
+  color: #fff;
+  padding: 0 10px 0 10px;
+}
+#bonus button{
+  box-sizing: border-box;
+  background-image: linear-gradient(90deg, #7fba2f, #98c838, #7fba2f);
+  border: none;
+  border-radius: 4px;
+  width: 400px;
+  height: 80px;
+  margin-top: 30px;
+  font-size: 25px;
+  font-weight: 500;
+  color: #fff;
+  transition: 0.3s;
+  position: absolute;
+  left: 450px;
+}
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  background: #fff;
+  color: #45505b;
+  font-size: 14px;
+  text-align: center;
+  padding: 30px 0;
+}
+#footer h3 {
+  font-size: 36px;
+  font-weight: 700;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+#footer p {
+  font-size: 15;
+  font-style: italic;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+#footer .social-links {
+  margin: 15px 0 15px 0;
+}
+#footer .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: var(--primary);
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+#footer .social-links a:hover {
+  background: var(--primary-dark);
+  color: #fff;
+  text-decoration: none;
+}
+#footer .copyright {
+  margin: 0 0 3px 0;
+}
+#footer .credits {
+  font-size: 13px;
+}

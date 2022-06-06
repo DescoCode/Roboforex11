@@ -1,0 +1,21 @@
+@import url(/css/config.css);
+@import url(/css/custom.css);
+@import url(/css/global.css);
+@import url(/css/responsive.css);
+@import url(/vendor/aos/aos.css);
+@import url(/vendor/bootstrap-icons/bootstrap-icons.css);
+@import url(/vendor/bootstrap/css/bootstrap-grid.css);
+@import url(/vendor/bootstrap/css/bootstrap-grid.min.css);
+@import url(/vendor/bootstrap/css/bootstrap-grid.rtl.css);
+@import url(/vendor/bootstrap/css/bootstrap-grid.rtl.min.css);
+@import url(/vendor/bootstrap/css/bootstrap-reboot.css);
+@import url(/vendor/bootstrap/css/bootstrap-reboot.min.css);
+@import url(/vendor/bootstrap/css/bootstrap.css);
+@import url(/vendor/boxicons/css/animations.css);
+@import url(/vendor/boxicons/css/boxicons.css);
+@import url(/vendor/boxicons/css/boxicons.min.css);
+@import url(/vendor/boxicons/css/transformations.css);
+@import url(/vendor/glightbox/css/glightbox.css);
+@import url(/vendor/glightbox/css/glightbox.min.css);
+@import url(/vendor/swiper/swiper-bundle.min.css);
+
